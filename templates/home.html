@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HealthAgent AI Welcome Portal</title>
+    <style>
+        body, html {
+            margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            /* Reference Background light powder-blue color matching */
+            background-color: #e6f0fa;
+        }
+
+        /* 🎨 VECTOR ILLUSTRATION PLACEMENTS (Mirroring user reference picture) */
+        .vector-corner { position: absolute; pointer-events: none; opacity: 0.95; font-size: 80px; filter: drop-shadow(0 5px 10px rgba(0,0,0,0.05)); }
+        
+        /* Top Left: Floating pills & capsules */
+        .top-left-pills { top: 40px; left: 50px; font-size: 70px; transform: rotate(-15deg); }
+        
+        /* Top Right: Clipboard with heartbeat, thermometer, bottle */
+        .top-right-kit { top: 40px; right: 50px; text-align: right; line-height: 1; }
+        
+        /* Bottom Left: First aid kit, stethoscope, syringe */
+        .bottom-left-kit { bottom: 40px; left: 50px; text-align: left; line-height: 0.9; }
+        
+        /* Bottom Right: Scattered strip and capsules */
+        .bottom-right-pills { bottom: 40px; right: 60px; font-size: 75px; transform: rotate(20deg); }
+
+        /* Smooth Abstract cloud waves background matching reference image curves */
+        .cloud-wave-1 { position: absolute; top: 0; right: 0; width: 350px; height: 350px; background: rgba(255,255,255,0.4); border-radius: 0 0 0 100%; z-index: 1; }
+        .cloud-wave-2 { position: absolute; bottom: 0; left: 0; width: 380px; height: 380px; background: rgba(255,255,255,0.4); border-radius: 0 100% 0 0; z-index: 1; }
+
+        /* CENTER CARD CONTAINER UI */
+        .welcome-card-wrapper {
+            position: relative; z-index: 10; display: flex; width: 100%; height: 100%;
+            align-items: center; justify-content: center;
+        }
+
+        .welcome-card { 
+            padding: 50px 40px; 
+            background: rgba(255, 255, 255, 0.9); 
+            border-radius: 24px; 
+            border: 2px solid #b9d5f3; 
+            box-shadow: 0 15px 40px rgba(160, 190, 220, 0.35); 
+            max-width: 620px; 
+            text-align: center;
+        }
+
+        h1 { 
+            font-size: 44px; margin: 0 0 15px 0; font-weight: 800; 
+            color: #1e3a5f; letter-spacing: -0.5px;
+        }
+        p { font-size: 16px; opacity: 0.9; line-height: 1.6; margin-bottom: 35px; color: #4a607a; }
+        
+        .enter-btn { 
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%); 
+            color: white; border: none; padding: 16px 50px; font-size: 17px; border-radius: 30px; 
+            cursor: pointer; font-weight: bold; text-decoration: none; 
+            box-shadow: 0 6px 20px rgba(29, 78, 216, 0.3); transition: all 0.2s ease; 
+            display: inline-block; 
+        }
+        .enter-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 25px rgba(29, 78, 216, 0.45); }
+    </style>
+</head>
+<body>
+
+    <!-- Cloud Curves -->
+    <div class="cloud-wave-1"></div>
+    <div class="cloud-wave-2"></div>
+    
+    <!-- 🎨 LIVE MEDICAL GRAPHICS SWARM SHAPES FROM REFERENCE DRAWING -->
+    <div class="vector-corner top-left-pills">💊🔴⚪</div>
+    
+    <div class="vector-corner top-right-kit">
+        <span style="font-size:75px;">📋</span><br>
+        <span style="font-size:55px; margin-right:15px;">🌡️</span><span style="font-size:65px;">🧪</span>
+    </div>
+    
+    <div class="vector-corner bottom-left-kit">
+        <span style="font-size:85px; display:block; margin-bottom:-10px;">🧰</span>
+        <span style="font-size:65px;">🩺</span><span style="font-size:55px; margin-left:10px;">💉</span>
+    </div>
+    
+    <div class="vector-corner bottom-right-pills">⚪🔴💊</div>
+
+    <!-- Center Card Suite -->
+    <div class="welcome-card-wrapper">
+        <div class="welcome-card">
+            <h1> HealthAgent AI Portal</h1>
+            <p>Enterprise Multi-Agent Care Network System. Real-time autonomous prescription parsing pipelines, user timing parameter routing triggers, and contextual bio-safety sentinel audits.</p>
+            <a href="/dashboard" class="enter-btn">🚀 Enter Clinical Portal Dashboard</a>
+        </div>
+    </div>
+
+</body>
+</html>
