@@ -96,8 +96,7 @@ def process_agentic_swarm():
         "agent3": agent_3_response
     })
 
-if __name__ == '__main__':
-    import os
+import os
 
 if __name__ == "__main__":
     app.run(
